@@ -15,5 +15,5 @@ function fancyAlert(arg) {
 ```
 
 
-http://github.com - automatic!
-[GitHub](http://github.com)
+
+[VUT BRNO](https://www.vutbr.cz)
