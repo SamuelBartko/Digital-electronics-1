@@ -16,4 +16,6 @@ function fancyAlert(arg) {
 
 
 *Samuel Bartko*
+
+
 [VUT BRNO](https://www.vutbr.cz)
