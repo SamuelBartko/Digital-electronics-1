@@ -1,6 +1,6 @@
 # Digital-electronics-1
 
-## LABS
+## First LAB from Digital elctronics 1 ##
 
 
 **My source code**
@@ -13,3 +13,7 @@ function fancyAlert(arg) {
   }
 }
 ```
+
+
+http://github.com - automatic!
+[GitHub](http://github.com)
