@@ -2,11 +2,11 @@
 
 https://github.com/SamuelBartko/Digital-electronics-1
 
-## First LAB O1-gates
+# First LAB O1-gates
 
-### De Morgan's Laws simulations
+## De Morgan's Laws simulations
 
-#### Code
+### Code
 ```vhdl
 
 architecture dataflow of gates is
@@ -18,7 +18,7 @@ begin
 end architecture dataflow;
 
 ```
-#### Graphs
+### Graphs
 
 ![Screenshot De Morgan's Law](Images/1.png)
 
@@ -35,9 +35,9 @@ end architecture dataflow;
 
 https://www.edaplayground.com/x/PjHG
 
-### Verification of Distributive law
+## Verification of Distributive law
 
-#### Code
+### Code
 ```vhdl
 
 architecture dataflow of gates is
@@ -49,7 +49,7 @@ begin
 end architecture dataflow;
 
 ```
-#### Graphs
+### Graphs
 
 ![Screenshot Verification of Distributive law](Images/2.png)
 
