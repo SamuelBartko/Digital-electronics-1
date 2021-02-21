@@ -217,7 +217,7 @@ end architecture testbench;
 end entity comparator_2bit;
 
 ------------------------------------------------------------------------
--- Architecture body for 2-bit binary comparator
+-- Architecture body for 4-bit binary comparator
 ------------------------------------------------------------------------
 architecture Behavioral of comparator_2bit is
 begin
