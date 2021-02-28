@@ -2,7 +2,7 @@
 
 https://github.com/SamuelBartko/Digital-electronics-1
 
-# Third LAB O2-vivado
+# Third LAB 03-vivado
 
 ## 1. Table with connection of 16 slide switches and 16 LEDs on Nexys A7 board
 
