@@ -103,4 +103,16 @@ end architecture Behavioral;
 
 ## 3. Vivado tutorial
 
-Coming soon...
+### Project creation 
+
+1. Click on File, then Project and New...
+![1](Images/3.png)
+2. Click on Next button
+3. Name your Project and select location of the project. Then click on Next button
+![2](Images/4.png)
+4. We select the RTL Project
+![3](Images/5.png)
+5. We click on Create Files button, and change the file type to VHDL. The we type the file name. Then we click om OK and Next.
+6. Click on Next
+7. We click on Boards and select Nexys A7-50T
+![4](Images/6.png)
