@@ -123,3 +123,25 @@ end architecture Behavioral;
 7. We click on Boards and select Nexys A7-50T
 
 ![4](Images/6.png)
+
+### Adding testbench file to Project
+
+1. Click with right button on mouse on Simulation Sources. Then click on Add sources...
+
+![1](Images/7.png)
+
+2. We select Add or create simulation source and click on Next.
+
+![2](Images/8.png)
+
+3.  We click on Create Files button, and change the file type to VHDL. The we type the file name. Then we click om OK and Next.
+
+![2](Images/9.png)
+
+4. Click on Finish button.
+
+### Running simulation
+
+1. On Left pannel we click on Run Simulation and then on Run behavioral simulation.
+
+![1](Images/10.png)
