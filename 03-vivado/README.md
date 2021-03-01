@@ -136,7 +136,7 @@ end architecture Behavioral;
 
 3.  We click on Create Files button, and change the file type to VHDL. The we type the file name. Then we click om OK and Next.
 
-![2](Images/9.png)
+![3](Images/9.png)
 
 4. Click on Finish button.
 
@@ -145,3 +145,17 @@ end architecture Behavioral;
 1. On Left pannel we click on Run Simulation and then on Run behavioral simulation.
 
 ![1](Images/10.png)
+
+#### Adding XDC constraints file
+
+1. Click with right button on mouse on Constraints. Then click on Add sources..
+
+[1](Images/11.png)
+
+2. We select Add or create simulation source and click on Next.
+
+3.  We click on Create Files button, and change the file type to VHDL. The we type the file name. Then we click om OK and Next.
+
+![2](Images/12.png)
+
+4. Click on Finish button.
