@@ -150,7 +150,7 @@ end architecture Behavioral;
 
 1. Click with right button on mouse on Constraints. Then click on Add sources..
 
-[1](Images/11.png)
+![1](Images/11.png)
 
 2. We select Add or create simulation source and click on Next.
 
