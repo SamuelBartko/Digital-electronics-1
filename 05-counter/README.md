@@ -167,4 +167,4 @@ p_cnt_up_down : process(clk)
 
 ### Image of Top layer
 
-![TOP16](Images/2.jpg)
+![TOP16](Images/2.JPG)
