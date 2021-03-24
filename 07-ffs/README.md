@@ -8,10 +8,10 @@ https://github.com/SamuelBartko/Digital-electronics-1
 
   | **D** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-- |
-   | 0 | 0 | 0 |  |
-   | 0 | 1 | 0 |  |
-   | 1 | 0 | 1 |  |
-   | 1 | 1 | 1 |  |
+   | 0 | 0 | 0 | No change |
+   | 0 | 1 | 0 | Invert (Toggle) |
+   | 1 | 0 | 1 | Invert (Toggle) |
+   | 1 | 1 | 1 | No change |
 
    | **J** | **K** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
