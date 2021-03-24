@@ -6,12 +6,18 @@ https://github.com/SamuelBartko/Digital-electronics-1
 
 ## 1. Characteristic equations and tables for D, JK, T flip-flops.
 
+### Equasion for D 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{align*}&space;q_{n&plus;1}&space;=&space;&~&space;d&space;&\&space;\end{align*}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{align*}&space;q_{n&plus;1}&space;=&space;&~&space;d&space;&\&space;\end{align*}" title="\begin{align*} q_{n+1} = &~ d &\ \end{align*}" /></a>
+
   | **D** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-- |
    | 0 | 0 | 0 | No change |
    | 0 | 1 | 0 | Invert (Toggle) |
    | 1 | 0 | 1 | Invert (Toggle) |
    | 1 | 1 | 1 | No change |
+
+### Equasion for JK
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{align*}&space;q_{n&plus;1}&space;=&~&space;j\overline{q}{n}\&space;&plus;\overline{k}q_{n}&space;&\&space;\end{align*}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{align*}&space;q_{n&plus;1}&space;=&~&space;j\overline{q}{n}\&space;&plus;\overline{k}q_{n}&space;&\&space;\end{align*}" title="\begin{align*} q_{n+1} =&~ j\overline{q}{n}\ +\overline{k}q_{n} &\ \end{align*}" /></a>
 
    | **J** | **K** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
@@ -24,6 +30,9 @@ https://github.com/SamuelBartko/Digital-electronics-1
    | 1 | 1 | 0 | 1 | Toggle |
    | 1 | 1 | 1 | 0 | Toggle |
 
+### Equasion for T
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{align*}&space;q_{n&plus;1}&space;=&space;&~&space;t\overline{q}_{n}\&space;&plus;\overline{t}q_{n}&space;\end{align*}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{align*}&space;q_{n&plus;1}&space;=&space;&~&space;t\overline{q}_{n}\&space;&plus;\overline{t}q_{n}&space;\end{align*}" title="\begin{align*} q_{n+1} = &~ t\overline{q}_{n}\ +\overline{t}q_{n} \end{align*}" /></a>
+
    | **T** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-- |
    | 0 | 0 | 0 | No change |
@@ -31,9 +40,9 @@ https://github.com/SamuelBartko/Digital-electronics-1
    | 1 | 0 | 1 | Invert (Toggle) |
    | 1 | 1 | 0 | Invert (Toggle) |
 
-## 2. Display driver
+## 2. D latch
 
-### Code of the process `p_mux`
+### Code of the process `p_d_latch`
 
 ```vhdl
 
