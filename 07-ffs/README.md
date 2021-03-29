@@ -85,7 +85,21 @@ https://github.com/SamuelBartko/Digital-electronics-1
 
 ```vhdl
 
-
+p_d_ff_rst : process (clk)
+    
+    begin
+    
+        if rising_edge(clk) then
+            if (rst = '1') then
+                q <= '0';
+                q_bar <= '1';
+            else
+                q <= d;
+                q_bar <= not d;
+            end if;
+        end if;
+        
+    end process p_d_ff_rst;
 
 ```
 
@@ -104,8 +118,131 @@ https://github.com/SamuelBartko/Digital-electronics-1
 
 
 ```
+------------------------------------------------------------------------------------------
+### Code of the `tb_d_ff_arst`
 
+```vhdl
+
+
+
+```
+
+### Code of the `tb_d_ff_rst`
+
+```vhdl
+
+--------------------------------------------------------------------
+    -- Reset generation process
+    --------------------------------------------------------------------
+
+     p_reset_gen : process
+        begin
+            s_rst <= '0';
+            wait for 20 ns;
+            
+            -- Reset activated
+            s_rst <= '1';
+            wait for 15 ns;
+    
+            --Reset deactivated
+            s_rst <= '0';
+            wait for 20 ns;
+            
+            s_rst <= '1';
+            wait for 350 ns;
+  
+            wait;
+     end process p_reset_gen;
+
+    --------------------------------------------------------------------
+    -- Data generation process
+    --------------------------------------------------------------------
+    
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        
+        s_d  <= '0';
+        
+        --d sekv
+        wait for 10 ns;
+        s_d  <= '1';
+        wait for 5 ns;
+        
+        assert ((s_rst = '0') and (s_q = '1') and (s_q_bar = '0'))
+        report "Test failed for reset low, after clk rising when s_d = '1'" severity error;
+        
+        wait for 10 ns;
+        s_d  <= '0';
+        wait for 5 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        wait for 10 ns;
+        s_d  <= '1';
+        wait for 5 ns;
+        
+        -- verify that reset is truly synchronous
+        assert ((s_rst = '1') and (s_q = '1') and (s_q_bar = '0'))
+        report "Test failed for reset high, before clk rising when s_d = '1'" severity error;
+        
+        wait for 5 ns;
+        s_d  <= '0';
+        --/d sekv
+        
+        --d sekv
+        wait for 10 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        wait for 10 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        wait for 10 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        --/d sekv
+             
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+
+```
+
+### Code of the `tb_jk_ff_rst`
+
+```vhdl
+
+
+
+```
+
+### Code of the `tb_t_ff_rst`
+
+```vhdl
+
+
+
+```
+
+### Screenshot with simulated time waveforms for `tb_d_ff_arst`
+ 
+![Graph](Images/1.png)
+
+### Screenshot with simulated time waveforms for `tb_d_ff_rst`
+ 
 ![Graph](Images/2.png)
+
+
+### Screenshot with simulated time waveforms for `tb_jk_ff_rst`
+ 
+![Graph](Images/3.png)
+
+### Screenshot with simulated time waveforms for `tb_t_ff_rst`
+ 
+![Graph](Images/4.png)
 
 ## 4. Shift register
 
