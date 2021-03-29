@@ -69,7 +69,7 @@ https://github.com/SamuelBartko/Digital-electronics-1
 
 ```
 
-![Graph](Images/1.png)
+![Graph](Images/0.png)
 
 ## 3. Flip-flops
 
