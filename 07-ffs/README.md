@@ -233,7 +233,7 @@ p_d_ff_rst : process (clk)
 
 ### Screenshot with simulated time waveforms for `tb_d_ff_rst`
  
-![Graph](Images/2.png)
+![Graph](Images/2-1.png)
 
 
 ### Screenshot with simulated time waveforms for `tb_jk_ff_rst`
