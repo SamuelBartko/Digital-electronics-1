@@ -675,4 +675,4 @@ p_d_ff_rst : process (clk)
 
 ## 4. Shift register
 
-![Scheme](Images/scheme.png)
+![Scheme](Images/scheme.jpg)
