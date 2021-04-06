@@ -171,10 +171,10 @@ p_output_fsm : process(s_state)
 
 | **Current state** | **Direction South** | **Direction West** | **Delay** | **No cars** | **Cars West** | **Cars South** | **Cars both directions** |
 | :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| `goS`   | green  | red    | at least 3 sec | `goS` | `waitS` | `goS` | `waitS` |
-| `waitS` | yellow | red    | 0.5 sec        | `goW` | `goW` | `goW` | `goW` |
-| `goW`   | red    | green  | at least 3 sec | `goW` | `goW` | `waitW` | `waitW` |
-| `waitW` | red    | yellow | 0.5 sec        | `goS` | `goS` | `goS` | `goS` |
+| `SOUTH_GO`   | green  | red    | at least 4 sec | `SOUTH_GO` | `SOUTH_WAIT` | `SOUTH_GO` | `SOUTH_WAIT` |
+| `SOUTH_WAIT` | yellow | red    | 1 sec        | `WEST_GO` | `WEST_GO` | `WEST_GO` | `WEST_GO` |
+| `WEST_GO`   | red    | green  | at least 4 sec | `WEST_GO` | `WEST_GO` | `WEST_WAIT` | `WEST_WAIT` |
+| `WEST_WAIT` | red    | yellow | 1 sec        | `SOUTH_GO` | `SOUTH_GO` | `SOUTH_GO` | `SOUTH_GO` |
 
 ### State diagram
 ![Diagram](Images/5.png)
